@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "ISC",
   "scripts": {
+    "go": "webpack-dev-server -d --inline --progress --no-info",
     "start": "cross-env NODE_ENV=production node ./server/bin/www",
     "dev": "npm install && concurrently -r 'npm run dev:client' 'npm run dev:server'",
     "dev:client": "webpack-dev-server -d --inline --progress --no-info",
