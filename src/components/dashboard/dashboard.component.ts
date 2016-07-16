@@ -12,8 +12,4 @@ export class DashboardComponent {
   constructor(private router: Router) {
 
   }
-
-  handleClick() {
-    this.router.navigate(['/dashboard/footballers']);
-  }
 }

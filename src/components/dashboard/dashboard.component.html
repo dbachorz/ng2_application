@@ -1,12 +1,18 @@
 <div class="aside">
-  <div class="item" (click)="handleClick()">
-    Show all footballers
+  <div class="item">
+    <a [routerLink]='["/dashboard/footballers"]'>
+      Show all footballers
+    </a>
   </div>
   <div class="item">
-    Show all matches
+    <a [routerLink]='["/dashboard/matches"]'>
+      Show all matches
+    </a>
   </div>
   <div class="item">
-    Show all trainers
+    <a [routerLink]='["/dashboard/trainers"]'>
+      Show all trainers
+    </a>
   </div>
 </div>
 
