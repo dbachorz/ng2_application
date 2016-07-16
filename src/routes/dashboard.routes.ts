@@ -1,6 +1,19 @@
 import { DashboardComponent } from './../components';
+import { FootballersComponent } from './../components';
+import {RouterConfig, provideRouter}  from '@angular/router';
 
-export const DASHBOARD_ROUTES = [{
+const DASHBOARD_ROUTES: RouterConfig = [{
   path: 'dashboard',
-  component: DashboardComponent
+  component: DashboardComponent,
+  children: [{
+      path: '',
+      component: FootballersComponent
+    }, {
+      path: 'footballers',
+      component: FootballersComponent
+    }]
 }];
+
+export const dashboardRouterProvider = [
+  provideRouter(DASHBOARD_ROUTES)
+];
