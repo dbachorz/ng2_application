@@ -4,7 +4,7 @@ import {Router, ROUTER_DIRECTIVES} from '@angular/router';
 @Component({
   selector: 'x-header',
   template: require('./x-header.component.html'),
-  styleUrls: ['./src/components/dashboard/header/x-header.component.less'],
+  styles: [require('./x-header.component.scss')],
   directives: [ROUTER_DIRECTIVES]
 })
 

@@ -1,5 +1,5 @@
 import { DashboardComponent } from './../components';
-import { FootballersComponent, TrainersComponent, MatchesComponent } from './../components';
+import { FootballersComponent } from './../components';
 import { provideRouter, RouterConfig }  from '@angular/router';
 
 const DASHBOARD_ROUTES: RouterConfig = [{
@@ -11,12 +11,6 @@ const DASHBOARD_ROUTES: RouterConfig = [{
   }, {
     path: 'footballers',
     component: FootballersComponent
-  }, {
-    path: 'trainers',
-    component: TrainersComponent
-  }, {
-    path: 'matches',
-    component: MatchesComponent
   }]
 }];
 

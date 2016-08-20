@@ -5,7 +5,7 @@ import { ROUTER_DIRECTIVES, Router } from '@angular/router';
     selector: 'app',
     directives: [ROUTER_DIRECTIVES],
     template: `<router-outlet></router-outlet>`,
-    styles: [require('./app.component.less')],
+    styles: [require('./app.component.scss')],
     encapsulation: ViewEncapsulation.None,
 })
 

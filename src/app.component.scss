@@ -7,8 +7,8 @@ html {
 body {
   margin: 0;
   font: 1.6rem/1.2em 'Roboto', sans-serif;
-  color: @dark;
-  background: @background;
+  color: $dark;
+  background: $background;
 }
 
 h1, h2 {
@@ -29,7 +29,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: @dark;
+  color: $dark;
 }
 
 button, input, textarea {

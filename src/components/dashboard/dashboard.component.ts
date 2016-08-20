@@ -5,7 +5,7 @@ import { XHeaderComponent } from './header';
 @Component({
   selector: 'dashboard',
   template: require('./dashboard.component.html'),
-  styleUrls: ['./src/components/dashboard/dashboard.component.less'],
+  styles: [require('./dashboard.component.scss')],
   directives: [ROUTER_DIRECTIVES, XHeaderComponent]
 })
 
