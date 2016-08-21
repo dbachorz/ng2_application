@@ -35,7 +35,7 @@ const plugins = basePlugins
 
 module.exports = {
     entry: {
-        app: './src/boot.ts',
+        app: './src/main.ts',
     },
 
     output: {

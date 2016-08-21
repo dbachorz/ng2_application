@@ -1,3 +1,2 @@
-export * from './dashboard';
-export * from './dashboard/footballers';
-export * from './dashboard/header';
+export * from './footballers';
+export * from './header';
