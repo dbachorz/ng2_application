@@ -6,7 +6,14 @@ html {
 }
 
 :host {
-  margin: 0;
+  body {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    background-size: cover;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+  }
 }
 
 body {
