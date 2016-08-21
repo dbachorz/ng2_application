@@ -1,12 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
 import { FootballersComponent } from './components';
 
-const appRoutes: Routes = [{
-    path: '',
-    redirectTo: '/footballers',
-    pathMatch: 'full'
-  }, {
-    path: 'footballers', component: FootballersComponent
+const appRoutes: Routes = [
+  {
+    path: 'footballers',
+    component: FootballersComponent
   }
 ];
 
