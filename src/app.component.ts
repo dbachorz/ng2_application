@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES, Router } from '@angular/router';
 import { XHeaderComponent } from './components';
 
@@ -6,7 +6,7 @@ import { XHeaderComponent } from './components';
     selector: 'app',
     directives: [ROUTER_DIRECTIVES, XHeaderComponent],
     template: require('./app.component.html'),
-    styles: [require('./app.component.scss')]
+    styles: [require('./app.component.scss')],
 })
 
 export class AppComponent {
