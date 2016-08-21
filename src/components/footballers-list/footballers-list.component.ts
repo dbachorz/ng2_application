@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component ({
   selector: 'footballers',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styles: [require('./footballers-list.component.scss')]
 })
 export class FootballersListComponent {
-  constructor() {
+  constructor(private router: Router) {}
 
+  addNewFootballer() {
+    this.router.navigate(['/add-new-footballer']);
   }
 }

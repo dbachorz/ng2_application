@@ -2,6 +2,11 @@
 
 html {
   font-size: 10px;
+  margin: 0;
+}
+
+:host {
+  margin: 0;
 }
 
 body {

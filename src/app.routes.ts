@@ -1,10 +1,21 @@
 import { Routes, RouterModule } from '@angular/router';
-import { FootballersListComponent } from './components';
+import { AddNewFootballersComponent,
+         FootballersListComponent
+       } from './components';
 
 const appRoutes: Routes = [
   {
-    path: 'footballers',
+    path: '',
+    redirectTo: '/footballers-list',
+    pathMatch: 'full'
+  },
+  {
+    path: 'footballers-list',
     component: FootballersListComponent
+  },
+  {
+    path: 'add-new-footballer',
+    component: AddNewFootballersComponent
   }
 ];
 
