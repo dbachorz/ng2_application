@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { routing,
   appRoutingProviders } from './app.routes';
 import { BrowserModule }  from '@angular/platform-browser';
-import { FootballersComponent } from './components/footballers/footballers.component';
+import { FootballersListComponent } from './components/footballers-list/footballers-list.component';
 import {MdButtonToggleModule} from '@angular2-material/button-toggle/button-toggle';
 import {MdButtonModule} from '@angular2-material/button/button';
 import {MdCheckboxModule} from '@angular2-material/checkbox/checkbox';
@@ -57,7 +57,7 @@ import {RtlModule} from '@angular2-material/core/rtl/dir';
   ],
   declarations: [
     AppComponent,
-    FootballersComponent
+    FootballersListComponent
   ],
   providers: [
     appRoutingProviders

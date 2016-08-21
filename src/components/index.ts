@@ -1,2 +1,2 @@
-export * from './footballers';
+export * from './footballers-list';
 export * from './header';

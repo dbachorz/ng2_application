@@ -1,10 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
-import { FootballersComponent } from './components';
+import { FootballersListComponent } from './components';
 
 const appRoutes: Routes = [
   {
     path: 'footballers',
-    component: FootballersComponent
+    component: FootballersListComponent
   }
 ];
 
