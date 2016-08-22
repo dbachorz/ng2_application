@@ -21,4 +21,8 @@ export class AddNewFootballersComponent {
       lastName: this.lastName
     });
   }
+
+  handleSubmit() {
+    console.log(this.myForm.value);
+  }
 }
