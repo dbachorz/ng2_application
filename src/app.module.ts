@@ -26,6 +26,8 @@ import {PortalModule} from '@angular2-material/core/portal/portal-directives';
 import {OverlayModule} from '@angular2-material/core/overlay/overlay-directives';
 import {MdMenuModule} from '@angular2-material/menu/menu';
 import {RtlModule} from '@angular2-material/core/rtl/dir';
+import { FORM_PROVIDERS } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -53,14 +55,16 @@ import {RtlModule} from '@angular2-material/core/rtl/dir';
     MdTooltipModule,
     OverlayModule,
     PortalModule,
-    RtlModule
+    RtlModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,
     FootballersListComponent
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    FORM_PROVIDERS
   ],
   bootstrap: [ AppComponent ]
 })
