@@ -4,6 +4,7 @@ import { routing,
   appRoutingProviders } from './app.routes';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FootballersListComponent } from './components/footballers-list/footballers-list.component';
+import { FootballersService } from './services/footballers.service';
 import {MdButtonToggleModule} from '@angular2-material/button-toggle/button-toggle';
 import {MdButtonModule} from '@angular2-material/button/button';
 import {MdCheckboxModule} from '@angular2-material/checkbox/checkbox';
@@ -64,7 +65,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   providers: [
     appRoutingProviders,
-    FORM_PROVIDERS
+    FORM_PROVIDERS,
+    FootballersService
   ],
   bootstrap: [ AppComponent ]
 })

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormBuilder, FormGroup } from '@angular/forms';
+import { FootballersService } from '../../services/footballers.service';
 
 @Component ({
   selector: 'add-new-footballer',
@@ -11,7 +12,8 @@ export class AddNewFootballersComponent {
   private firstName: FormControl;
   private lastName: FormControl;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+              private footballersService: FootballersService) {
 
     this.firstName = new FormControl('');
     this.lastName = new FormControl('');
@@ -23,6 +25,6 @@ export class AddNewFootballersComponent {
   }
 
   handleSubmit() {
-    console.log(this.myForm.value);
+    this.footballersService.saveFootballer(this.myForm.value);
   }
 }
