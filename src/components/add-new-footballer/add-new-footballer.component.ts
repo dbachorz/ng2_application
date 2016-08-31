@@ -25,6 +25,6 @@ export class AddNewFootballersComponent {
   }
 
   handleSubmit() {
-    this.footballersService.saveFootballer(this.myForm.value);
+    this.footballersService.addFootballer(this.myForm.value);
   }
 }
