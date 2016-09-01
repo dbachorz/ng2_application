@@ -50,7 +50,7 @@ export class HttpWrapper {
   }
 
   private generateUrl(url: string): string {
-    if (['http', 'www'].some((item) => url.indexOf(item) > -1)) {
+    if (['http', 'www'].some((item) => url.includes(item))) {
       return url;
     }
 

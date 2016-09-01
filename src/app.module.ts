@@ -1,3 +1,4 @@
+import { HttpWrapper } from './shared/providers/http-wrapper';
 import { AppComponent }       from './app.component';
 import { NgModule } from '@angular/core';
 import { routing,
@@ -57,18 +58,19 @@ import { ReactiveFormsModule } from '@angular/forms';
     OverlayModule,
     PortalModule,
     RtlModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   declarations: [
     AppComponent,
-    FootballersListComponent
+    FootballersListComponent,
   ],
   providers: [
     appRoutingProviders,
     FORM_PROVIDERS,
-    FootballersService
+    FootballersService,
+    HttpWrapper,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
 })
 
 export class AppModule {
