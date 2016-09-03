@@ -18,7 +18,7 @@ export class HttpWrapper {
   }
 
   get(url: string, options?: RequestOptionsArgs): Observable<Response> {
-    return this.http.get(this.generateUrl(url), this.generateOptions(options))
+    return this.http.get(this.generateUrl(url), { body: "" })
       .map(this.responseHandler, this);
   }
 

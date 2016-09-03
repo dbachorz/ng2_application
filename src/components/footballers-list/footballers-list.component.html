@@ -19,65 +19,14 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="cell">
-        Luke Peters
+    <div class="row" *ngFor="let footballer of (footballersList$ | async)">
+      <div class="cell"> <!-- name -->
+        {{ footballer.name }}
       </div>
-      <div class="cell">
-        25
-      </div>
-      <div class="cell">
-        Freelance Web Developer
-      </div>
-      <div class="cell">
-        Brookline, MA
+
+      <div class="cell"> <!-- age -->
+        {{ footballer._id }}
       </div>
     </div>
-
-    <div class="row">
-      <div class="cell">
-        Joseph Smith
-      </div>
-      <div class="cell">
-        27
-      </div>
-      <div class="cell">
-        Project Manager
-      </div>
-      <div class="cell">
-        Somerville, MA
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="cell">
-        Maxwell Johnson
-      </div>
-      <div class="cell">
-        26
-      </div>
-      <div class="cell">
-        UX Architect & Designer
-      </div>
-      <div class="cell">
-        Arlington, MA
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="cell">
-        Harry Harrison
-      </div>
-      <div class="cell">
-        25
-      </div>
-      <div class="cell">
-        Front-End Developer
-      </div>
-      <div class="cell">
-        Boston, MA
-      </div>
-    </div>
-
   </div>
 </div>

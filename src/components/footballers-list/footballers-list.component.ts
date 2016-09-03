@@ -1,3 +1,5 @@
+import { Observable } from 'rxjs/Observable';
+import { FootballersService } from './../../services/footballers.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -7,7 +9,17 @@ import { Router } from '@angular/router';
   styles: [require('./footballers-list.component.scss')]
 })
 export class FootballersListComponent {
-  constructor(private router: Router) {}
+
+  private footballersList$: Observable<any>;
+
+  constructor(private router: Router,
+              private footballersService: FootballersService) {
+  }
+
+  ngOnInit() {
+    this.footballersList$ = this.footballersService.fetchFootballers();
+  }
+
 
   addNewFootballer() {
     this.router.navigate(['/add-new-footballer']);
