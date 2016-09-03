@@ -16,13 +16,11 @@ export class FootballersService {
 
   addFootballer(footballer: FootballerModel) {
     const payload =  {
-      name: footballer.firstName,
-      // last_name: footballer.lastName,
+      firstName: footballer.firstName,
+      lastName: footballer.lastName,
+      country: footballer.country,
+      club: footballer.club,
     };
-    console.log('payload', payload);
-    this.httpWrapper.post('footballers', payload)
-      .subscribe(
-        res => console.log(res),
-        err => console.log(err));
+    this.httpWrapper.post('footballers', payload);
   }
 }

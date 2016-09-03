@@ -11,16 +11,22 @@ export class AddNewFootballersComponent {
   private myForm: FormGroup;
   private firstName: FormControl;
   private lastName: FormControl;
+  private country: FormControl;
+  private club: FormControl;
 
   constructor(private fb: FormBuilder,
               private footballersService: FootballersService) {
 
     this.firstName = new FormControl('');
     this.lastName = new FormControl('');
+    this.country = new FormControl('');
+    this.club = new FormControl('');
 
     this.myForm = this.fb.group({
       firstName: this.firstName,
-      lastName: this.lastName
+      lastName: this.lastName,
+      country: this.country,
+      club: this.club,
     });
   }
 

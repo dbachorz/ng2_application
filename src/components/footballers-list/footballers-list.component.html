@@ -6,26 +6,34 @@
 
     <div class="row header">
       <div class="cell">
-        Name
+        First name
       </div>
       <div class="cell">
-        Age
+        Last name
       </div>
       <div class="cell">
-        Occupation
+        Country
       </div>
       <div class="cell">
-        Location
+        Club
       </div>
     </div>
 
     <div class="row" *ngFor="let footballer of (footballersList$ | async)">
-      <div class="cell"> <!-- name -->
-        {{ footballer.name }}
+      <div class="cell"> <!-- first name -->
+        {{ footballer.firstName }}
       </div>
 
-      <div class="cell"> <!-- age -->
-        {{ footballer._id }}
+      <div class="cell"> <!-- last name -->
+        {{ footballer.lastName }}
+      </div>
+
+      <div class="cell"> <!-- country -->
+        {{ footballer.country }}
+      </div>
+
+      <div class="cell"> <!-- club -->
+        {{ footballer.club }}
       </div>
     </div>
   </div>
