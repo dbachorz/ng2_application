@@ -21,6 +21,6 @@ export class FootballersService {
       country: footballer.country,
       club: footballer.club,
     };
-    this.httpWrapper.post('footballers', payload);
+    this.httpWrapper.post('footballers', payload).subscribe();
   }
 }
