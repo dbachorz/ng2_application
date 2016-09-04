@@ -25,7 +25,7 @@ export class FootballersListComponent {
   }
 
   editFootballer(footballerId) {
-    this.router.navigate(['57cb396d2e29e31e55000007/edit']);
+    this.router.navigate([footballerId + '/edit']);
   }
 
   removeFootballer(footballerId) {
