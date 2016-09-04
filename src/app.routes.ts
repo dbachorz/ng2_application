@@ -19,7 +19,7 @@ const appRoutes: Routes = [
     component: AddNewFootballersComponent,
   },
   {
-    path: ':footballer_id/edit',
+    path: 'footballer/:footballer_id/edit',
     component: EditFootballerComponent,
   },
 ];
