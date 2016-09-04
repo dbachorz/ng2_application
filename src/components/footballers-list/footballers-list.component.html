@@ -17,6 +17,12 @@
       <div class="cell">
         Club
       </div>
+      <div class="cell">
+        Edit
+      </div>
+      <div class="cell">
+        Delete
+      </div>
     </div>
 
     <div class="row" *ngFor="let footballer of (footballersList$ | async)">
@@ -34,6 +40,14 @@
 
       <div class="cell"> <!-- club -->
         {{ footballer.club }}
+      </div>
+
+      <div class="cell" (click)="editFootballer(footballer._id)"> <!-- edit -->
+        EDIT
+      </div>
+
+      <div class="cell" (click)="removeFootballer(footballer._id)"> <!-- delete -->
+        DELETE
       </div>
     </div>
   </div>

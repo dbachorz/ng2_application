@@ -20,8 +20,15 @@ export class FootballersListComponent {
     this.footballersList$ = this.footballersService.fetchFootballers();
   }
 
-
   addNewFootballer() {
     this.router.navigate(['/add-new-footballer']);
+  }
+
+  editFootballer(footballerId) {
+    this.router.navigate(['57cb396d2e29e31e55000007/edit']);
+  }
+
+  removeFootballer(footballerId) {
+    console.log(footballerId);
   }
 }

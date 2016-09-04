@@ -1,17 +1,18 @@
 import { HttpWrapper } from './../shared/providers/http-wrapper';
 import { Injectable } from '@angular/core';
 import { FootballerModel } from '../../src/models/footballer.model';
-import { Observable } from 'rxjs/Observable';
-import { Headers, RequestOptions, Http, Response } from '@angular/http';
 
 @Injectable()
 export class FootballersService {
-
   constructor(private httpWrapper: HttpWrapper) {
   };
 
   fetchFootballers() {
     return this.httpWrapper.get('footballers');
+  }
+
+  fetchFootballer(id) {
+    return this.httpWrapper.get(`footballers/${id}`);
   }
 
   addFootballer(footballer: FootballerModel) {
