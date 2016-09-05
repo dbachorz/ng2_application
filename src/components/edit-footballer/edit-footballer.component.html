@@ -1,1 +1,26 @@
-hello world
+<form [formGroup]="myForm" (submit)="handleSubmit()">
+  <div class="form-wrapper">
+    <md-input [formControl]="firstName">
+      <md-placeholder>
+        First name
+      </md-placeholder>
+    </md-input>
+    <md-input [formControl]="lastName">
+      <md-placeholder>
+        Last name
+      </md-placeholder>
+    </md-input>
+    <md-input [formControl]="country">
+      <md-placeholder>
+        Country
+      </md-placeholder>
+    </md-input>
+    <md-input [formControl]="club">
+      <md-placeholder>
+        Club
+      </md-placeholder>
+    </md-input>
+  </div>
+
+  <input type="submit" value="submit"/>
+</form>
