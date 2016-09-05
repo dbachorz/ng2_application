@@ -38,7 +38,7 @@ export class HttpWrapper {
   }
 
   delete(url: string, options?: RequestOptionsArgs): Observable<Response> {
-    return this.http.delete(this.generateUrl(url), this.generateOptions(options))
+    return this.http.delete(this.generateUrl(url), { body: "" })
       .map(this.responseHandler, this);
   }
 
@@ -53,7 +53,6 @@ export class HttpWrapper {
     if (['http', 'www'].some((item) => url.includes(item))) {
       return url;
     }
-
     return 'http://localhost:3000/api/' + url;
   }
 

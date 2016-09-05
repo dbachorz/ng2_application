@@ -34,4 +34,8 @@ export class FootballersService {
     };
     this.httpWrapper.post('footballers', payload).subscribe();
   }
+
+  removeFootballer(footballerId) {
+    this.httpWrapper.delete(`footballers/${footballerId}`).subscribe();
+  }
 }

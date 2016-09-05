@@ -29,6 +29,6 @@ export class FootballersListComponent {
   }
 
   removeFootballer(footballerId) {
-    console.log(footballerId);
+    this.footballersService.removeFootballer(footballerId);
   }
 }
