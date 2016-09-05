@@ -48,4 +48,8 @@ export class EditFootballerComponent {
           });
       });
   }
+
+  handleSubmit(){
+    this.footballersService.updateFootballer(this.myForm.value, this.footballerId);
+  }
 }
